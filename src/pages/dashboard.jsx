@@ -1,4 +1,3 @@
-import React from "react";
 import { Link, Outlet, useNavigate } from "react-router-dom";
 import { Card, Tabs, Tab, Typography } from "@mui/material";
 
@@ -25,7 +24,12 @@ const Dashboard = () => {
       </Typography>
       <div style={dashboardStyle}>
         <div style={{ padding: "16px" }}>
-          <Tabs value={false} onChange={handleTabChange} orientation="vertical" sx={{minHeight:'85vh'}}>
+          <Tabs
+            value={false}
+            onChange={handleTabChange}
+            orientation="vertical"
+            sx={{ minHeight: "85vh" }}
+          >
             <Tab
               label="Analytics"
               value="analytics"
