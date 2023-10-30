@@ -15,7 +15,7 @@ const Analytics = () => {
 
   const getData = async () => {
     try {
-      const response = await fetch("http://localhost:3001/api/analytics"); 
+      const response = await fetch("http://localhost:8080/api/analytics"); 
       const data = await response.json(); 
       setData(data);
     } catch (error) {
